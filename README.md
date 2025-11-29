@@ -1,5 +1,3 @@
-[![CI](https://github.com/DrHenchman/uhc-pack/actions/workflows/main.yml/badge.svg)](https://github.com/DrHenchman/uhc-pack/actions/workflows/main.yml)
-
 # UHC Pack for Minecraft Java Edition
 
 A datapack for Minecraft Java Edition for running Ultra Hardcore (UHC) tournaments.
@@ -8,10 +6,7 @@ A datapack for Minecraft Java Edition for running Ultra Hardcore (UHC) tournamen
 
 Currently supported Minecraft versions:
 
-* 1.21.x
-* 1.20.x
-* 1.19.x
-* 1.18.x
+* 1.21.10
 
 Earlier versions are not compatible due to the use of new command in the datapack. More
 recent versions (including snapshots) may be compatible but are not actively supported
@@ -25,7 +20,7 @@ The datapack has also officially supported on the following server variants:
 
 ## How to setup
 
-1. Download the zip file for the [latest release](https://github.com/DrHenchman/uhc-pack/releases/download/v0.29/uhc-pack.zip) of the datapack
+1. Download the zip file for the latest release of the datapack
 2. Place the zip file in in the `<world>/datapacks/` folder
 3. Run `/reload` (or `/minecraft:reload` on Spigot/Paper) on your server to detect the new datapack
 4. Decide the center of your map and teleport to it e.g. `/tp @s 0 ~ 0`
@@ -69,21 +64,15 @@ UHC Pack is developed open source and is happy to accept contributions. All cont
 AGPL 3.0 license as UHC Pack uses. You are also welcome to raise bugs reports or enhancement requests if you have
 any. For more information on contributing, refer to the guide in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Links
-
-* [Bugs & Feature requests](https://github.com/DrHenchman/uhc-pack/issues)
-* [Release notes](https://github.com/DrHenchman/uhc-pack/releases)
-* [Discord server](https://discord.gg/PFg4mbN)
-
 ## Credits
 
 * DrHenchman - Creator of the datapack
-* [Contributors](https://github.com/DrHenchman/uhc-pack/graphs/contributors)
+* MultimedYam - Updated the datapack
 
 ## License
 
 UHC Pack - Ultra Hardcore for Minecraft Java Edition
-Copyright (C) 2020  DrHenchman
+Copyright (C) 2025  MultimedYam
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
