@@ -2,10 +2,10 @@
   "parent": "uhc_pack:root",
   "display": {
     "icon": {
-      "item": "minecraft:anvil"
+      "id": "minecraft:totem_of_undying"
     },
-    "title": "Heavy Hitter",
-    "description": "Most damage dealt",
+    "title": "WINNER!",
+    "description": "Congratulations on winning the UHC!",
     "frame": "challenge"
   },
   "criteria": {

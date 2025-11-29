@@ -2,7 +2,7 @@
   "parent": "uhc_pack:root",
   "display": {
     "icon": {
-      "item": "minecraft:diamond_sword"
+      "id": "minecraft:diamond_sword"
     },
     "title": "MVP",
     "description": "Most Valuable Player",

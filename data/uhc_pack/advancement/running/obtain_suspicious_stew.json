@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:suspicious_stew"
+            "items": [
+              "minecraft:suspicious_stew"
+            ]
           }
         ]
       }

@@ -60,13 +60,14 @@ function display_path() {
 }
 
 function generate_book() {
-    local json_text=""
+    local pages_array=""
     local json_sep=""
     for json_file in $(ls book | grep '\.json$' | sort); do
-        json_text="$json_text$json_sep$(jq --ascii-output --compact-output . "book/$json_file" | jq --raw-input .)"
+        local page_json=$(jq --ascii-output --compact-output . "book/$json_file")
+        pages_array="$pages_array$json_sep{raw:[$page_json]}"
         json_sep=","
     done
-    local output_file="data/uhc_pack/functions/lobby/reset_book.mcfunction"
+    local output_file="data/uhc_pack/function/lobby/reset_book.mcfunction"
     echo -n '' > "$output_file"
 
     echo '#' >> "$output_file"
@@ -76,9 +77,9 @@ function generate_book() {
     echo '# Entity: the player' >> "$output_file"
     echo '#' >> "$output_file"
     echo '' >> "$output_file"
-    echo -n 'item replace entity @s hotbar.0 with minecraft:written_book{title:"UHC Pack",author:"DrHenchman",display:{Lore:["by DrHenchman"]},HideFlags:32,pages:[' >> "$output_file"
-    echo -n "$json_text" >> "$output_file"
-    echo -n ']}' >> "$output_file"
+    echo -n 'item replace entity @s hotbar.0 with minecraft:written_book[minecraft:written_book_content={pages:[' >> "$output_file"
+    echo -n "$pages_array" >> "$output_file"
+    echo -n '],title:{raw:"UHC Pack"},author:"DrHenchman",generation:0,resolved:false}]' >> "$output_file"
     echo '' >> "$output_file"
     echo '' >> "$output_file"
     echo 'scoreboard players reset @s uhcOpt' >> "$output_file"

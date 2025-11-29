@@ -2,10 +2,10 @@
   "parent": "uhc_pack:root",
   "display": {
     "icon": {
-      "item": "minecraft:shield"
+      "id": "minecraft:feather"
     },
-    "title": "Tank",
-    "description": "Most damage taken",
+    "title": "Mostly Harmless",
+    "description": "Least damage dealt",
     "frame": "challenge"
   },
   "criteria": {

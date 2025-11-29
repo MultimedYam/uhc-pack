@@ -20,7 +20,7 @@ scoreboard players reset UHCWB uhcPG
 tellraw @a [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Setup","color":"gray"},{"text":" \u2503 Generating lobby (may take a few seconds)"}]
 fill ~-12 250 ~-12 ~11 253 ~11 minecraft:barrier hollow
 fill ~-11 253 ~-11 ~10 253 ~10 minecraft:air
-summon minecraft:armor_stand ~ 251 ~ {Tags:[lobby,lobbycenter],NoGravity:1b,Small:1b,Invisible:1b,CustomNameVisible:1b,CustomName:"[{\"text\":\"\"},{\"text\":\"UHC\",\"color\":\"gold\"},{\"text\":\" \\u2503 \"},{\"text\":\"Lobby\",\"color\":\"aqua\"}]"}
+summon minecraft:armor_stand ~ 251 ~ {Tags:[lobby,lobbycenter],NoGravity:1b,Small:1b,Invisible:1b,CustomNameVisible:1b,CustomName:[{"text":"UHC","color":"gold"},{"text":" \\u2503 ","color":"gray"},{"text":"Lobby","color":"aqua"}]}
 
 setblock ~ 251 ~ minecraft:structure_block{mode:"LOAD",name:"uhc_pack:lobby_armor_stands",ignoreEntities:0b,posX:-6,posZ:-6}
 setblock ~ 252 ~ minecraft:redstone_block

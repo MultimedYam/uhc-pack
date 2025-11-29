@@ -5,13 +5,13 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:diamond_chestplate"
+            "items": ["minecraft:diamond_chestplate"]
           }
         ]
       }
     }
   },
-  "rewards": {
-    "function": "uhc_pack:running/diamond_chestplate/on_obtain"
+  "rewards": { 
+    "function": "uhc_pack:running/diamond_chestplate/on_obtain" 
   }
 }

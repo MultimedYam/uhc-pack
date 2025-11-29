@@ -1,0 +1,8 @@
+#
+# Complete the UHC, putting all players into spectator mode
+#
+
+scoreboard players set UHC uhcState 5
+execute as @a run function uhc_pack:running/make_player_spectator
+tellraw @a[tag=admin] [{"text":""},{"text":"UHC","color":"light_purple"},{"text":" \u2503 "},{"text":"Awards","color":"gray"},{"text":" \u2503 "},{"text":"[Click to reveal]","color":"green","click_event":{"action":"run_command","command":"/function uhc_pack:awards/reveal"}}]
+function #uhc_pack:events/on_complete

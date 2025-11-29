@@ -146,7 +146,7 @@ function download_version() {
             echo "$version_jar_sha1  $TARGET_DIR/$version/$version.jar" | shasum -a 1 -c
             ;;
         paper)
-            local paper_build="$(curl "https://papermc.io/api/v2/projects/paper/versions/$version" | jq '.builds[-1] // ""' --raw-output)"
+            local paper_build="$(curl "https://fill.papermc.io/v3/projects/paper/versions/$version/builds" | jq -r 'map(select(.channel == "STABLE")) | .[0] | .id' --raw-output)"
             if [ -z "$paper_build" ]; then
                 echo "WARN: No paper build found for version $version"
                 exit 0

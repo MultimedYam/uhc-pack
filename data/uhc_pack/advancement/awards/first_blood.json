@@ -2,7 +2,7 @@
   "parent": "uhc_pack:root",
   "display": {
     "icon": {
-      "item": "minecraft:wooden_sword"
+      "id": "minecraft:wooden_sword"
     },
     "title": "First Blood",
     "description": "First to kill another player",

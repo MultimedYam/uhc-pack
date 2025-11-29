@@ -2,10 +2,10 @@
   "parent": "uhc_pack:root",
   "display": {
     "icon": {
-      "item": "minecraft:feather"
+      "id": "minecraft:poisonous_potato"
     },
-    "title": "Mostly Harmless",
-    "description": "Least damage dealt",
+    "title": "Early Exit",
+    "description": "Someone has to go out first",
     "frame": "challenge"
   },
   "criteria": {
